@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <title>Contact Us</title>
+</head>
+
+<body>
+
+    <!------------------------------------------------ NavBar ------------------------------------------------>
+
+    <nav class="navbar navbar-expand-md navbar-light bg-white sticky-top px-3 py-0" style="height: 60px;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="HostoHome.html">
+                <img src="./img/logo.png" class="img-fluid">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse fw-bold" id="navbarToggler">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 px-3 bg-white">
+                    <li class="nav-item">
+                        <a class="nav-link text-info" href="HostoHome.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Layouts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Elements</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            <span class="mx-1">Portfolio</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Portfolio 1</a></li>
+                            <li><a class="dropdown-item" href="#">Portfolio 2</a></li>
+                            <li><a class="dropdown-item" href="#">Portfolio 3</a></li>
+                            <li><a class="dropdown-item" href="#">Portfolio 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ContactUs.html" target="_blank">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!------------------------------------------------ Form ------------------------------------------------>
+
+    <div class="container mt-4 bg-light">
+        <div class="py-5 text-center">
+            <img class="mb-4  d-block  mx-auto" src="./img/logo.png">
+
+            <h1> Hosto Contact form</h1>
+            <p class="lead">Please Fill This Form If You Want To Contact With Us</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-9 col-sm-8 col-8 offset-2">
+                <form class="row g-3 needs-validation" id="form" novalidate>
+
+                    <span class="col-md-6 col-sm-12">
+                        <label for="validationCustom01" class="form-label">First name</label>
+                        <input type="text" class="form-control" id="validationCustom01" value="Esraa" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </span>
+                    <span class="col-md-6 col-sm-12">
+                        <label for="validationCustom02" class="form-label">Last name</label>
+                        <input type="text" class="form-control" id="validationCustom02" value="Mousad" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </span>
+                    <div class="col-12">
+                        <label for="validationCustomUsername" class="form-label">User name</label>
+                        <div class="input-group has-validation">
+                            <input type="text" placeholder="Username" class="form-control" id="validationCustomUsername"
+                                aria-describedby="inputGroupPrepend" required>
+                            <div class="invalid-feedback">
+                                Please choose a username.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <label for="validationCustomUsername" class="form-label">Email</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                            <input type="email" class="form-control" placeholder="Email@gmail.com"
+                                id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                            <div class="invalid-feedback">
+                                Please choose an Email.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <label for="validationCustomUsername" class="form-label">Address</label>
+                        <div class="input-group has-validation">
+                            <input type="text" placeholder="Main street" class="form-control"
+                                id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                            <div class="invalid-feedback">
+                                Please choose an Address.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <label for="validationCustomUsername" class="form-label">Address2 </label>
+                        <span class=" text-muted">(Optional)</span>
+                        <input type="text" placeholder="Apartment" class="form-control" id="validationCustomUsername"
+                            aria-describedby="inputGroupPrepend">
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <label for="validationCustom03" class="form-label">City</label>
+                        <input type="text" class="form-control" id="validationCustom03" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid city.
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <label for="validationCustom04" class="form-label">State</label>
+                        <select class="form-select" id="validationCustom04" required>
+                            <option selected disabled value="">Choose...</option>
+                            <option>State 1</option>
+                            <option>State 2</option>
+                            <option>State 3</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid state.
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <label for="validationCustom05" class="form-label">Zip</label>
+                        <input type="text" class="form-control" id="validationCustom05" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid zip.
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                            <label class="form-check-label" for="invalidCheck">
+                                Agree to terms and conditions
+                            </label>
+                            <div class="invalid-feedback">
+                                You must agree before submitting.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-5">
+                        <button class="btn btn-primary" id="submitBtn" type="submit">Submit form</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!---------------------------------------------- Footer ---------------------------------------------->
+
+    <div class="container-fluid bg-dark">
+        <section class="container d-flex justify-content-between text-left text-start">
+            <div class="row">
+                <div class="col-md-3 col-sm-12 col-12 py-4 px-0 text-muted">
+                    <h6>About Us</h6>
+                    <small class="fst-italic">Lorem ipsum dolor sit amet, consectetuer adipiscing, sed diam nonummy nibh
+                        eui.</small>
+
+                    <ul class="list-unstyled mt-4">
+                        <li>
+                            <i class="fas fa-home text-info"></i>
+                            <small> 3301 Envato Melbourne, Little Lonsdale St</small>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt text-info"></i><small> +1 234 123 4567</small>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope text-info"></i>
+                            <a href="#" class="text-muted">
+                                <small> info@owltemplates.com</small>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="div1 col-md-2 col-sm-12 col-12 py-4 px-0 text-muted">
+                    <ul class="list-styled">
+                        <h6>Navigation</h6>
+                        <li>
+                            <a href="#" class="text-decoration-none text-muted">
+                                <small>Web Hosting</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-muted">
+                                <small>Reseller Hosting</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-muted">
+                                <small>Features</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-muted">
+                                <small>VPS Hosting</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-muted">
+                                <small>Dedicated Servers</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-muted">
+                                <small>Domain Registration</small>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="div1 col-md-2 col-sm-12 col-12 py-4 px-0  text-muted">
+                    <ul class="list-styled">
+                        <h6>Useful Links</h6>
+                        <li>
+                            <a href="#" class="text-decoration-none text-muted">
+                                <small>Proin gravida nibh vel</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-muted">
+                                <small>Velit auctor aliquet venen</small>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-muted">
+                                <small>Aenean sollicitudin</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-muted">
+                                <small>Lorem quis bibendum</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-muted">
+                                <small>Lorem Ipsum Dolor</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-muted">
+                                <small>Dolor sit Amet</small>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class=" div1 col-md-2 col-sm-12 col-12 py-4 px-0 text-muted">
+                    <ul class="list-styled mb-1 ">
+                        <h6>Recent Posts</h6>
+                        <div class="d-inline-block">
+                            <li>
+                                <a href="#" class="text-decoration-none text-muted">
+                                    <small>Home</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-decoration-none text-muted">
+                                    <small>About</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-decoration-none text-muted">
+                                    <small>Features</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-decoration-none text-muted">
+                                    <small>Blog</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-decoration-none text-muted">
+                                    <small>Works</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-decoration-none text-muted">
+                                    <small>Contacts</small>
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class=" div1 col-md-3 col-sm-12 col-12 py-4 px-0 text-muted">
+                    <h6>Tags</h6>
+                    <a href="#"><button type="button" class="btn btn-info p-1 my-1"><small
+                                class="text-white">Business</small></button></a>
+                    <button type="button" class="btn btn-info p-1 my-1"><small
+                            class="text-white">Corporate</button></small>
+                    <button type="button" class="btn btn-info p-1 my-1"><small
+                            class="text-white">Portfolio</button></small>
+                    <button type="button" class="btn btn-info p-1 my-1"><small class="text-white">Work</button></small>
+                    <button type="button" class="btn btn-info p-1 my-1"><small class="text-white">Clean</button></small>
+                    <button type="button" class="btn btn-info p-1 my-1"><small
+                            class="text-white">Template</button></small>
+                    <button type="button" class="btn btn-info p-1 my-1"><small
+                            class="text-white">Wordpress</button></small>
+                    <button type="button" class="btn btn-info p-1 my-1"><small
+                            class="text-white">Joomla</button></small>
+                    <button type="button" class="btn btn-info p-1 my-1"><small
+                            class="text-white">Drupal</button></small>
+                    <button type="button" class="btn btn-info p-1 my-1"><small class="text-white">Grow</button></small>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="container-fluid bg-dark border-top border-light p-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-12 col-12">
+                    <small class="text-muted">Hosto © 2012 Privacy Policy</small>
+                </div>
+                <div class="col-md-5 col-sm-12 col-12">
+                    <a href="#"><i class="fab fa-facebook-f text-info m-2"></i></a>
+                    <a href="#"><i class="fab fa-twitter text-info m-2"></i></a>
+                    <a href="#"><i class="fab fa-tumblr text-info m-2"></i></a>
+                    <a href="#"><i class="fab fa-vimeo-v text-info m-2"></i></a>
+                    <a href="#"><i class="fab fa-dribbble text-info m-2"></i></a>
+                    <a href="#"><i class="fab fa-instagram text-info m-2"></i></a>
+                    <a href="#"><i class="fab fa-behance text-info m-2"></i></a>
+                    <a href="#"><i class="fab fa-flickr text-info m-2"></i></a>
+                    <a href="#"><i class="fas fa-tree text-info m-2"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in text-info m-2"></i></a>
+                    <a href="#"><i class="fas fa-wifi text-info m-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------------------------- Script ---------------------------------------------->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <script>
+        (function () {
+            'use strict'
+            var forms = document.querySelectorAll('.needs-validation')
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        debugger
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                            alert("Please Enter Valid Information")
+                        } else {
+                            alert("Your Information submitted Successfully");
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+</body>
+
+</html>
